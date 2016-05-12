@@ -1,0 +1,35 @@
+@mixin rounded($top: 0.5em, $right: 0.5em, $bottom: 0.5em, $left: 0.5em) {
+-webkit-border-top-left-radius: $top;
+-webkit-border-top-right-radius:  $right;
+-webkit-border-bottom-right-radius: $bottom;
+-webkit-border-bottom-left-radius: $left;
+
+-moz-border-radius-topleft: $top;
+-moz-border-radius-topright:  $right;
+-moz-border-radius-bottomright: $bottom;
+-moz-border-radius-bottomleft: $left;
+
+border-top-left-radius: $top;
+border-top-right-radius:  $right;
+border-bottom-right-radius: $bottom;
+border-bottom-left-radius: $left;
+}
+
+@mixin appPadding {
+	padding: 0 25px;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+$asset-base-path: '..' !default;
+@function asset($type, $file) {
+  @return url($asset-base-path + '/' + $type + '/' + $file);
+}
+@function image($file) {
+  @return asset('img', $file);
+}

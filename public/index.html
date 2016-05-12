@@ -8,14 +8,65 @@
 <head>
 	<title>Best Brands</title>
 </head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 <body>
-<img src="assets/img/prechat-survey-dynamic-field.jpg">
-<img src="assets/img/routing-guide.jpg">
 
-<div id="chatwrap">
-</div>
-
+<div id="chatWrap" class="chatWrap">
+  <div id="chatHeader" class="chatHeader">
+  	<div class="logo"><img src="assets/img/logo-best-brands.png"></div>
+    <div class="close">
+    	<img src="assets/img/btn-close.png">
+		</div>
+  </div><!--#chatHeader-->
+  <div id="chatPageWrap" class="chatPageWrap">
+	  <div id="chatBreadcrumbs" class="chatBreadcrumbs">
+	  <span class="item">Home</span> / <span class="item">Existing Service</span> / <span class="item active">Mobile</span>
+	  </div>
+	  <h1 class="chatPageTitle">
+	    Which Mobile topic would you like help with?
+	  </h1>
+	  <nav>
+	  	<ul>
+	  		<li>
+	  			<span class="icon">
+	  				<img src="assets/img/icon-billing.png">
+	  			</span>
+	  			Billing and Payments
+	  		</li>
+	  		<li>
+	  			<span class="icon">
+	  				<img src="assets/img/icon-tech-support.png">
+	  			</span>
+	  			Technical Support
+	  		</li>
+	  		<li>
+	  			<span class="icon">
+	  				<img src="assets/img/icon-login.png">
+	  			</span>
+	  			Account Login Support
+	  		</li>
+	  		<li>
+	  			<span class="icon">
+	  				<img src="assets/img/icon-other.png">
+	  			</span>
+	  			Other
+	  		</li>
+	  	</ul>
+	  </nav><!--#nav-->
+	  <div id="chatPageNav" class="chatPageNav">
+	  <span class="back">
+	    Back
+	  </span>
+	  </div><!--#chatPageNav-->
+	  <div id="chatFooter" class="chatFooter">
+	  <span class="logo">
+	  	<img src="assets/img/logo-tc.png">
+	  </span>
+	  </div>
+  </div><!--#chatPageWrap-->
+</div><!--#chatWrap-->
 
 <script src="assets/js/modules.js"></script>
 <script src="assets/js/app.js"></script>
