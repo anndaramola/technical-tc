@@ -7,10 +7,10 @@
 <meta charset="UTF-8">
 <head>
 	<title>Best Brands</title>
-</head>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+</head>
 <body>
 
 <div id="chatWrap" class="chatWrap">
@@ -20,8 +20,8 @@
     	<img src="assets/img/btn-close.png">
 		</div>
   </div><!--#chatHeader-->
-  <div id="chatPageWrap" class="chatPageWrap" ng-app="chatApp">
-  	<div class="chatPage01" style="display:none;"ng-controller="chatPage01">
+  <div id="chatPageWrap" class="chatPageWrap">
+  	<div class="chatPage01">
 		  <div id="chatBreadcrumbs" class="chatBreadcrumbs">
 		  <span class="item">Home</span> / <span class="item">Existing Service</span> / <span class="item active">Mobile</span>
 		  </div>
@@ -30,25 +30,25 @@
 		  </h1>
 		  <nav>
 		  	<ul>
-		  		<li>
+		  		<li class="billing">
 		  			<span class="icon">
 		  				<img src="assets/img/icon-billing.png">
 		  			</span>
 		  			Billing and Payments
 		  		</li>
-		  		<li>
+		  		<li class="technical">
 		  			<span class="icon">
 		  				<img src="assets/img/icon-tech-support.png">
 		  			</span>
 		  			Technical Support
 		  		</li>
-		  		<li>
+		  		<li class="account">
 		  			<span class="icon">
 		  				<img src="assets/img/icon-login.png">
 		  			</span>
 		  			Account Login Support
 		  		</li>
-		  		<li>
+		  		<li class="other">
 		  			<span class="icon">
 		  				<img src="assets/img/icon-other.png">
 		  			</span>
@@ -60,13 +60,9 @@
 		  <span class="back">
 		    Back
 		  </span>
-		  <span class="submit">
-		    <a href="#" class="btn-green btn">Start Chat</a>
-		    <span><em>*</em> Required field</span>
-		  </span>
 		  </div><!--#chatPageNav-->
 		</div><!--#chatPage01-->
-  	<div class="chatPage02" ng-controller="chatPage02">
+  	<div class="chatPage02" style="display:none;">
 		  <h1 class="chatPageTitle">
 		    Which Mobile topic would you like help with?
 		  </h1>
@@ -75,34 +71,35 @@
 			    <label for="FullName">
 			      Full Name:*
 			    </label>
-			    <input type="text" class="FullName" name="FullName" placeholder="John Doe"></input>
+			    <input type="text" required class="FullName" name="FullName" placeholder="John Doe"></input>
 		    </div>
 
 		    <div class="form-group">
 			    <label for="MobilePhoneNumber">
 			    	Mobile Phone Number:*
 			    </label>
-			    <input type="text" class="MobilePhoneNumber" name="MobilePhoneNumber" placeholder="ex: 123-123-1234"></input>
+			    <input type="text" required class="MobilePhoneNumber" name="MobilePhoneNumber" placeholder="ex: 123-123-1234"></input>
 		    </div>
 
 		    <div class="form-group">
 			    <label for="State">
-			    	State:*
+			    	State:
 			    </label>
-			    <select name="State">
-					  <option>Here is the first option</option>
-					  <option>The second option</option>
+			    <select name="State" class="State">
+					  <option value="0">Select one</option>
+					  <option value="1">California</option>
+					  <option value="2">The second option</option>
 					</select>
 		    </div>
 
-		    <div class="form-group">
+		    <div class="form-group purchased" style="display: none;">
 			    <label for="California">
 			    	Was your phone purchased in CA?
 			    </label>
 			    <div class="select-wrap">
 				    <select name="California">
-						  <option>Here is the first option</option>
-						  <option>The second option</option>
+						  <option value="3">Here is the first option</option>
+						  <option value="4">The second option</option>
 						</select>
 					</div>
 		    </div>
@@ -113,13 +110,17 @@
 			    </label>
 			    <textarea name="Question"></textarea>
 		    </div>
-
 		  </form>
 		  <span class="submit">
 		      <a href="#" class="btn-green btn">Start Chat</a>
 		      <span><em>*</em> Required field</span>
 		  </span>
 		</div><!--#chatPage02-->
+  	<div class="chatPage03" style="display:none;">
+		  <h1 class="chatPageTitle">
+		    Congratulations!! You have reached the chat agent.
+		  </h1>
+		</div><!--#chatPage03-->
 	  <div id="chatFooter" class="chatFooter">
 	  <span class="logo">
 	  	<img src="assets/img/logo-tc.png">

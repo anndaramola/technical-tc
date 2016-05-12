@@ -24,6 +24,7 @@ $green5: #8ea53c;
 	border: 1px solid #9c9c9c;
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 14px;
+	position: relative;
 	@include rounded-corners
 }
 
@@ -137,6 +138,9 @@ $green5: #8ea53c;
 {
 	height: 20px;
 	background: #e5e5e5;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	.logo
 	{
 		display: inline-block;
@@ -173,6 +177,11 @@ $green5: #8ea53c;
 			{
 				background-color: $green2;
 			}
+			&.error
+			{
+				border: 1px solid red;
+				background-color: #facfc8;
+			}
 		}
 		select
 		{
@@ -200,7 +209,7 @@ $green5: #8ea53c;
 {
 	margin-right: 25px;
 	display: block;
-	padding-bottom: 40px;
+	padding-bottom: 80px;
 	float: right;
 	@include clearfix
 	span
