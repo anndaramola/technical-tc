@@ -20,46 +20,106 @@
     	<img src="assets/img/btn-close.png">
 		</div>
   </div><!--#chatHeader-->
-  <div id="chatPageWrap" class="chatPageWrap">
-	  <div id="chatBreadcrumbs" class="chatBreadcrumbs">
-	  <span class="item">Home</span> / <span class="item">Existing Service</span> / <span class="item active">Mobile</span>
-	  </div>
-	  <h1 class="chatPageTitle">
-	    Which Mobile topic would you like help with?
-	  </h1>
-	  <nav>
-	  	<ul>
-	  		<li>
-	  			<span class="icon">
-	  				<img src="assets/img/icon-billing.png">
-	  			</span>
-	  			Billing and Payments
-	  		</li>
-	  		<li>
-	  			<span class="icon">
-	  				<img src="assets/img/icon-tech-support.png">
-	  			</span>
-	  			Technical Support
-	  		</li>
-	  		<li>
-	  			<span class="icon">
-	  				<img src="assets/img/icon-login.png">
-	  			</span>
-	  			Account Login Support
-	  		</li>
-	  		<li>
-	  			<span class="icon">
-	  				<img src="assets/img/icon-other.png">
-	  			</span>
-	  			Other
-	  		</li>
-	  	</ul>
-	  </nav><!--#nav-->
-	  <div id="chatPageNav" class="chatPageNav">
-	  <span class="back">
-	    Back
-	  </span>
-	  </div><!--#chatPageNav-->
+  <div id="chatPageWrap" class="chatPageWrap" ng-app="chatApp">
+  	<div class="chatPage01" style="display:none;"ng-controller="chatPage01">
+		  <div id="chatBreadcrumbs" class="chatBreadcrumbs">
+		  <span class="item">Home</span> / <span class="item">Existing Service</span> / <span class="item active">Mobile</span>
+		  </div>
+		  <h1 class="chatPageTitle">
+		    Which Mobile topic would you like help with?
+		  </h1>
+		  <nav>
+		  	<ul>
+		  		<li>
+		  			<span class="icon">
+		  				<img src="assets/img/icon-billing.png">
+		  			</span>
+		  			Billing and Payments
+		  		</li>
+		  		<li>
+		  			<span class="icon">
+		  				<img src="assets/img/icon-tech-support.png">
+		  			</span>
+		  			Technical Support
+		  		</li>
+		  		<li>
+		  			<span class="icon">
+		  				<img src="assets/img/icon-login.png">
+		  			</span>
+		  			Account Login Support
+		  		</li>
+		  		<li>
+		  			<span class="icon">
+		  				<img src="assets/img/icon-other.png">
+		  			</span>
+		  			Other
+		  		</li>
+		  	</ul>
+		  </nav><!--nav-->
+		  <div id="chatPageNav" class="chatPageNav">
+		  <span class="back">
+		    Back
+		  </span>
+		  <span class="submit">
+		    <a href="#" class="btn-green btn">Start Chat</a>
+		    <span><em>*</em> Required field</span>
+		  </span>
+		  </div><!--#chatPageNav-->
+		</div><!--#chatPage01-->
+  	<div class="chatPage02" ng-controller="chatPage02">
+		  <h1 class="chatPageTitle">
+		    Which Mobile topic would you like help with?
+		  </h1>
+		  <form class="chatSurvey">
+		  	<div class="form-group">
+			    <label for="FullName">
+			      Full Name:*
+			    </label>
+			    <input type="text" class="FullName" name="FullName" placeholder="John Doe"></input>
+		    </div>
+
+		    <div class="form-group">
+			    <label for="MobilePhoneNumber">
+			    	Mobile Phone Number:*
+			    </label>
+			    <input type="text" class="MobilePhoneNumber" name="MobilePhoneNumber" placeholder="ex: 123-123-1234"></input>
+		    </div>
+
+		    <div class="form-group">
+			    <label for="State">
+			    	State:*
+			    </label>
+			    <select name="State">
+					  <option>Here is the first option</option>
+					  <option>The second option</option>
+					</select>
+		    </div>
+
+		    <div class="form-group">
+			    <label for="California">
+			    	Was your phone purchased in CA?
+			    </label>
+			    <div class="select-wrap">
+				    <select name="California">
+						  <option>Here is the first option</option>
+						  <option>The second option</option>
+						</select>
+					</div>
+		    </div>
+
+		    <div class="form-group">
+			    <label for="Question">
+			    	Describe your question...
+			    </label>
+			    <textarea name="Question"></textarea>
+		    </div>
+
+		  </form>
+		  <span class="submit">
+		      <a href="#" class="btn-green btn">Start Chat</a>
+		      <span><em>*</em> Required field</span>
+		  </span>
+		</div><!--#chatPage02-->
 	  <div id="chatFooter" class="chatFooter">
 	  <span class="logo">
 	  	<img src="assets/img/logo-tc.png">

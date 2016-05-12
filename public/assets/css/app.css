@@ -90,6 +90,10 @@
 
 .chatPageNav {
   padding: 0 25px; }
+  .chatPageNav:after {
+    content: "";
+    display: table;
+    clear: both; }
   .chatPageNav .back {
     display: block;
     height: 30px;
@@ -115,3 +119,105 @@
     .chatFooter .logo img {
       height: 15px;
       width: auto; }
+
+.chatSurvey .form-group {
+  margin: 30px 25px; }
+  .chatSurvey .form-group label {
+    display: block;
+    margin-bottom: 5px; }
+  .chatSurvey .form-group input {
+    padding: 7px 5px 7px 45px;
+    width: calc(100% - 50px);
+    -webkit-border-top-left-radius: 0.25em;
+    -webkit-border-top-right-radius: 0.25em;
+    -webkit-border-bottom-right-radius: 0.25em;
+    -webkit-border-bottom-left-radius: 0.25em;
+    -moz-border-radius-topleft: 0.25em;
+    -moz-border-radius-topright: 0.25em;
+    -moz-border-radius-bottomright: 0.25em;
+    -moz-border-radius-bottomleft: 0.25em;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    border: 1px solid #c0c0c0; }
+    .chatSurvey .form-group input.FullName {
+      background: url("../img/icon-form-avatar.png") no-repeat 5px 5px; }
+    .chatSurvey .form-group input.MobilePhoneNumber {
+      background: url("../img/icon-form-phone.png") no-repeat 5px 5px; }
+    .chatSurvey .form-group input:focus {
+      background-color: #edfbda; }
+  .chatSurvey .form-group select {
+    padding: 7px 5px 7px 10px;
+    width: calc(100%);
+    -webkit-border-top-left-radius: 0.25em;
+    -webkit-border-top-right-radius: 0.25em;
+    -webkit-border-bottom-right-radius: 0.25em;
+    -webkit-border-bottom-left-radius: 0.25em;
+    -moz-border-radius-topleft: 0.25em;
+    -moz-border-radius-topright: 0.25em;
+    -moz-border-radius-bottomright: 0.25em;
+    -moz-border-radius-bottomleft: 0.25em;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    border: 1px solid #c0c0c0; }
+  .chatSurvey .form-group textarea {
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    width: calc(100% - 10px);
+    height: 70px;
+    -webkit-border-top-left-radius: 0.25em;
+    -webkit-border-top-right-radius: 0.25em;
+    -webkit-border-bottom-right-radius: 0.25em;
+    -webkit-border-bottom-left-radius: 0.25em;
+    -moz-border-radius-topleft: 0.25em;
+    -moz-border-radius-topright: 0.25em;
+    -moz-border-radius-bottomright: 0.25em;
+    -moz-border-radius-bottomleft: 0.25em;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em; }
+
+.chatPage02:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.submit {
+  margin-right: 25px;
+  display: block;
+  padding-bottom: 40px;
+  float: right; }
+  .submit:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .submit span {
+    text-align: right;
+    font-size: smaller;
+    float: right; }
+  .submit .btn {
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px 25px;
+    background: #c3e902;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #969696;
+    text-decoration: none;
+    -webkit-border-top-left-radius: 0.3em;
+    -webkit-border-top-right-radius: 0.3em;
+    -webkit-border-bottom-right-radius: 0.3em;
+    -webkit-border-bottom-left-radius: 0.3em;
+    -moz-border-radius-topleft: 0.3em;
+    -moz-border-radius-topright: 0.3em;
+    -moz-border-radius-bottomright: 0.3em;
+    -moz-border-radius-bottomleft: 0.3em;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em; }
